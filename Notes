@@ -1,0 +1,178 @@
+https://www.udemy.com/course/rest-api-analyzedesigndevelopsecuretestandmanage/learn/lecture/26849280#questions
+google review api
+trivago api integration
+
+https://github.com/bharatiyas/library-apis
+https://app.swaggerhub.com/apis/amazeit/library-api/1.0.0
+
+Type of API
+-------------
+1) SOAP(Simple Object Access Protocol)
+2) REST API
+
+1) SOAP
+    - SOAP uses XML
+    - SOA(Service oriented architecture) and ESB(Enterprise Service bus) evoloved
+    - SOAP Envelope
+        -SOAP Header
+        - SOAP Body
+    - It uses HTTP protocol
+
+    DISADVANTAGE
+    --------------
+    1) Heavy weight protocol: WS-Addressing, WS-Transactions, WS-Security
+    2) XML: Messages are bigger
+    3) Complex
+    4) Handling needs more computing resources
+    5) Simple testing is also not simple
+
+
+REST Constraints
+----------------
+1) Client-Server :  Separation of concerns.
+2) Stateless : EAch client request is treated independently by the server
+3) Cache : Responses are explicitly labelled as cacheable or non-cacheable.
+4) Uniform Interface : it should not change depending on business context.
+5) Layered System : Solution can comprise of multiple layers.
+clients-->Web layer-->API Gateway-->ESB-->Messaging system-->service
+6) Code on Demand : Optional constraint. Client can extended the functionality by excuting some code like some script or applets.
+
+
+Difference between API and services
+-----------------------------------
+API-Contract
+Service - API+implementation
+
+
+Why API Management?
+-----------------------------------
+- Security
+    - Data protection
+    - Threat detection
+    - Access Control
+    - Identify management
+
+- Analysis
+    - Drilling down into API traffic data
+    - understand traffic spikes
+    - Creating reports to understand the API behaviour
+    - API which are in high demand
+    - identify under-performing APIs
+
+- Monitoring
+    -It helps operation's team increase API availability for application developers, customers, and partners.
+
+- Alerting
+    - Set up alerts on your APIs which will enable operatinons to be pro-active.
+
+- Portal
+    You would want developers to securely and quickly gain acess.
+    https://developer.igirgroup.com/british_airways and resgister
+
+- Documentation
+    - you want the consumes/developers (external/internal) to consume those APIs.
+
+
+https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm
+
+
+
+REST : Resource
+-----------------
+- REST talks about resources and URI
+- In plain English, Resource =Noun
+
+
+HTTP for REST
+-------------
+- REST was proposed by Dr Roy Fielding
+- REST is not HTTP
+- Data and functionality are considered as resources
+    -URI
+    -Opertions
+    -Standardized Protocol:HTTP
+
+Why HTTP? because HTTP satisfies most of the constraints:
+- Client-Server interaction
+- HTTP Header(cache-control) used for cache control
+- HTTP interactions are Stateless
+- HTTP supports Uniform interface constraint because:
+    - It is based on URIs
+    - It's platform and programming language agnostic.
+- HTTP can fulfill Layered-System constraints
+
+https://restapitutorial.com/
+
+
+RMM(Richardson-maturity-model
+------------------------------
+-Three factors
+    -HTTP
+    -URI
+    -HATEOAS
+
+-Level 0: All SOAP baesd web-services here
+-Level 1: make use of URI. every resource identified by unique URI.
+-Level 2: makes use of URIs and HTTP, HTTP methods
+-Level 3: use of all 3 factors.
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Library System
+--------------
+- Library APIs : Expose REST APIs. Use of JSON as data format
+- Database : MySQL as our RDBMS. Handle relationships using JPA
+- API Design Documentation: Swagger/Open API 3.0
+- API implementation : Java and SpringBoot, SQL as DDL
+- API Management: Apigee API Gateway
+- API Testing: ?
+- API Monitoring: ?
+- API Security : ?
+- API Deployemnt:?
+
+
+Step1 : Create database and user
+----------------------------------
+Create database library_db;
+create user 'springuser' identified by 'springuserpassword';
+Grant all on library_db.* to  'springuser'@'%';
+
+
+Step2: Create GitHub Repository
+-------------------------------
+$ cd /Users/apple/training/webServices/LibraryManagementSystem
+$git init
+$git remote add origin https://github.com/DataPlayer-BigData/library-api.git
+$git pull origin main
+$git add -A
+$git commit -m "initial commit"
+$git push origin master
+Username : ACCESS TOKEN
+PASSWORD: LEAVE BLANK AND PRESS ENTER
+
+##Create develop branch for developer
+$git checkout -b developer
+$git push origin developer
+
+##Change default branch
+library-api repository-->Settnig-->Branch
+
+##Verify branch. Whether you are working on develop branch or not
+$git pull origin developer
+
+##Create new branch for every feature. Hence, create feature/publisher branch.
+$git checkout -b feature/publisher-create-api
+
+##Checkuout or push new changes in your local project
+$git status
+$git add -A
+
+
+
+To kill a process who is running on 8080
+$netstat -vanp tcp |grep 8080  #This will show all details with pid
+$kill -9 pid
+
+$lsof -i tcp:8080
+$kill -9 pid
+
