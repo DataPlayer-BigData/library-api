@@ -163,10 +163,25 @@ $git pull origin developer
 ##Create new branch for every feature. Hence, create feature/publisher branch.
 $git checkout -b feature/publisher-create-api
 
-##Checkuout or push new changes in your local project
+##Commit and push new changes in your local project
 $git status
 $git add -A
+$git commit -m "Publisher Create API is working"
+$git push origin feature/publisher-create-api
 
+
+##Merge feature/publisher-create-api branch with developer branch
+1) select https://github.com/DataPlayer-BigData/library-api
+2) select compare & pull request
+3) Click Create pull request Button
+4) Go to Pull requests tab
+5) It will list your pull request just click on that.
+6) Click on Merge pull request
+7) And click on Confirm merge Button
+
+##If we create new feature in our project then what to do for git
+$git checkout develop
+$git pull origin develop
 
 
 To kill a process who is running on 8080
