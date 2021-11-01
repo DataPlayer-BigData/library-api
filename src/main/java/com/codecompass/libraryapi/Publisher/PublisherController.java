@@ -1,5 +1,7 @@
 package com.codecompass.libraryapi.Publisher;
 
+import com.codecompass.libraryapi.Exception.LibraryResourceNotFoundException;
+import com.mysql.cj.jdbc.exceptions.CommunicationsException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -20,8 +22,15 @@ public class PublisherController {
     }
 
     @GetMapping(path = "/{publisherId}")
-    public Publisher getPublisher(@PathVariable Integer publisherId){
-        return new Publisher(publisherId,"Prentice Hall","prentice@email.com","123-456-789");
+    public ResponseEntity<?> getPublisher(@PathVariable Integer publisherId){
+        //return new Publisher(publisherId,"Prentice Hall","prentice@email.com","123-456-789");
+        Publisher publisher = null;
+        try{
+            publisher = publisherService.getPublisher(publisherId);
+        }catch(LibraryResourceNotFoundException e){
+            return new ResponseEntity<>(e.getMessage(),HttpStatus.NOT_FOUND);
+        }
+        return new ResponseEntity<>(publisher, HttpStatus.OK);
     }
 
     @PostMapping()

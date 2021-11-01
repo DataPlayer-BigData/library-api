@@ -14,7 +14,6 @@ public class Publisher {
     private String name;
 
     @Email(message = "Please enter a valid Email Id")
-
     private String emailId;
 
     @Pattern(regexp = "\\d{3}-\\d{3}-\\d{3}", message = "Please enter phone number is format 123-456-789")

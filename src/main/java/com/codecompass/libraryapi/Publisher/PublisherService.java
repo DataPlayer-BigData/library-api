@@ -1,8 +1,11 @@
 package com.codecompass.libraryapi.Publisher;
 
 import com.codecompass.libraryapi.Exception.LibraryResourceAlreadyExistException;
+import com.codecompass.libraryapi.Exception.LibraryResourceNotFoundException;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
+
+import java.util.Optional;
 
 @Service
 public class PublisherService {
@@ -32,6 +35,20 @@ public class PublisherService {
         publisherToBeAdded.setPublisherId(addedPublisher.getPublisherId());
         return publisherToBeAdded;
     }
+
+    public Publisher getPublisher(Integer publisherId)
+    throws LibraryResourceNotFoundException {
+
+        Publisher publisher = null;
+        Optional<PublisherEntity> publisherOptional = publisherRepository.findById(publisherId);
+
+        if (publisherOptional.isPresent()) {
+            publisher = new Publisher(publisherOptional.get().getPublisherId(), publisherOptional.get().getName(), publisherOptional.get().getEmailId(), publisherOptional.get().getPhoneNumber());
+        } else {
+            throw new LibraryResourceNotFoundException("Publisher Id: " + publisherId + " Not Found");
+        }
+        return publisher;
+     }
 }
 
 
