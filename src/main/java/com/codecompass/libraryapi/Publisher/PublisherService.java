@@ -39,7 +39,7 @@ public class PublisherService {
             addedPublisher = publisherRepository.save(publisherEntity);
         } catch (DataIntegrityViolationException e) {
             logger.error("Trace Id : {} , Publisher already exists!!! {}",traceId,e);
-            throw new LibraryResourceAlreadyExistException("Trace Id : " + traceId +", Publisher already exists!!!");
+            throw new LibraryResourceAlreadyExistException(traceId,"Publisher already exists!!!");
         }
 
         publisherToBeAdded.setPublisherId(addedPublisher.getPublisherId());
@@ -56,7 +56,7 @@ public class PublisherService {
         if (publisherOptional.isPresent()) {
             publisher = new Publisher(publisherOptional.get().getPublisherId(), publisherOptional.get().getName(), publisherOptional.get().getEmailId(), publisherOptional.get().getPhoneNumber());
         } else {
-            throw new LibraryResourceNotFoundException("Trace Id : " + traceId +", Publisher Id: " + publisherId + " Not Found");
+            throw new LibraryResourceNotFoundException(traceId ,"Publisher Id: " + publisherId + " Not Found");
         }
         return publisher;
      }
@@ -80,7 +80,7 @@ public class PublisherService {
             //publisher = createPublisherFromEntity(pe);
 
         } else {
-            throw new LibraryResourceNotFoundException("Trace Id : " + traceId +", Publisher Id: " + publisher.getPublisherId() + " Not Found");
+            throw new LibraryResourceNotFoundException(traceId ,"Publisher Id: " + publisher.getPublisherId() + " Not Found");
         }
         //return publisher;
     }
@@ -93,7 +93,8 @@ public class PublisherService {
         try{
             publisherRepository.deleteById(publisherId);
         }catch(EmptyResultDataAccessException e){
-            throw new LibraryResourceNotFoundException("Trace Id : " + traceId +", Publisher Id : " + publisherId + " Not Found");
+            logger.error("Trace Id: {}, Publisher Id: {} Not Found",traceId,publisherId,e);
+            throw new LibraryResourceNotFoundException(traceId,"Publisher Id : " + publisherId + " Not Found");
         }
     }
 

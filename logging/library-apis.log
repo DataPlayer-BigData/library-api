@@ -146,3 +146,824 @@ Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'S
 2021-11-02 18:37:45,402 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8080-exec-1] Writing ["Trace Id : 0e17f9b0-1944-4a6d-baf4-2afe9ebe49f5, Publisher already exists!!!"]
 2021-11-02 18:37:45,410 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed 409 CONFLICT
 2021-11-02 18:42:59,818 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-5] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 19:18:04,041 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Starting LibraryapiApplication using Java 11.0.2 on shabbir-mac.local with PID 81574 (/Users/apple/training/webServices/library-api/target/classes started by apple in /Users/apple/training/webServices/library-api)
+2021-11-02 19:18:04,041 DEBUG com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-02 19:18:04,041 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] The following profiles are active: test
+2021-11-02 19:18:04,322 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-02 19:18:04,329 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interfaces.
+2021-11-02 19:18:04,525 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-11-02 19:18:04,543 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 498 ms
+2021-11-02 19:18:04,601 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/library_db'
+2021-11-02 19:18:04,738 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 19:18:04,773 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-02 19:18:04,829 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-11-02 19:18:04,842 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 2 mappings in 'requestMappingHandlerMapping'
+2021-11-02 19:18:04,860 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-11-02 19:18:04,868 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-11-02 19:18:04,992 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-11-02 19:18:04,998 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-02 19:18:05,002 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Started LibraryapiApplication in 1.238 seconds (JVM running for 2100.16)
+2021-11-02 19:18:05,005 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-11-02 19:18:06,416 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-7] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 19:18:06,533 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Starting LibraryapiApplication using Java 11.0.2 on shabbir-mac.local with PID 81574 (/Users/apple/training/webServices/library-api/target/classes started by apple in /Users/apple/training/webServices/library-api)
+2021-11-02 19:18:06,533 DEBUG com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-02 19:18:06,533 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] The following profiles are active: test
+2021-11-02 19:18:06,649 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-02 19:18:06,653 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interfaces.
+2021-11-02 19:18:06,725 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-11-02 19:18:06,737 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 202 ms
+2021-11-02 19:18:06,762 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/library_db'
+2021-11-02 19:18:06,826 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 19:18:06,890 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-02 19:18:06,916 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-11-02 19:18:06,925 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 7 mappings in 'requestMappingHandlerMapping'
+2021-11-02 19:18:06,933 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-11-02 19:18:06,938 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-11-02 19:18:06,957 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-11-02 19:18:06,961 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-02 19:18:06,963 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Started LibraryapiApplication in 0.468 seconds (JVM running for 2102.122)
+2021-11-02 19:18:06,965 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-11-02 21:26:29,031 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-11] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 21:26:29,287 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Starting LibraryapiApplication using Java 11.0.2 on shabbir-mac.local with PID 81574 (/Users/apple/training/webServices/library-api/target/classes started by apple in /Users/apple/training/webServices/library-api)
+2021-11-02 21:26:29,288 DEBUG com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-02 21:26:29,288 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] The following profiles are active: test
+2021-11-02 21:26:29,443 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-02 21:26:29,448 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interfaces.
+2021-11-02 21:26:29,549 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-11-02 21:26:29,565 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 275 ms
+2021-11-02 21:26:29,589 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/library_db'
+2021-11-02 21:26:29,642 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 21:26:29,720 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-02 21:26:29,758 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-11-02 21:26:29,767 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 7 mappings in 'requestMappingHandlerMapping'
+2021-11-02 21:26:29,780 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-11-02 21:26:29,784 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-11-02 21:26:29,811 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-11-02 21:26:29,816 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-02 21:26:29,819 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Started LibraryapiApplication in 0.708 seconds (JVM running for 9805.236)
+2021-11-02 21:26:29,820 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-11-02 21:31:11,896 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-15] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 21:31:12,201 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Starting LibraryapiApplication using Java 11.0.2 on shabbir-mac.local with PID 81574 (/Users/apple/training/webServices/library-api/target/classes started by apple in /Users/apple/training/webServices/library-api)
+2021-11-02 21:31:12,201 DEBUG com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-02 21:31:12,202 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] The following profiles are active: test
+2021-11-02 21:31:12,336 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-02 21:31:12,341 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interfaces.
+2021-11-02 21:31:12,428 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-11-02 21:31:12,438 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 234 ms
+2021-11-02 21:31:12,464 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/library_db'
+2021-11-02 21:31:12,522 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 21:31:12,600 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-02 21:31:12,642 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-11-02 21:31:12,653 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 7 mappings in 'requestMappingHandlerMapping'
+2021-11-02 21:31:12,664 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-11-02 21:31:12,673 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-11-02 21:31:12,694 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-11-02 21:31:12,699 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-02 21:31:12,701 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Started LibraryapiApplication in 0.744 seconds (JVM running for 10088.128)
+2021-11-02 21:31:12,703 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-11-02 21:32:37,960 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-19] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 21:32:38,050 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Starting LibraryapiApplication using Java 11.0.2 on shabbir-mac.local with PID 81574 (/Users/apple/training/webServices/library-api/target/classes started by apple in /Users/apple/training/webServices/library-api)
+2021-11-02 21:32:38,050 DEBUG com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-02 21:32:38,050 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] The following profiles are active: test
+2021-11-02 21:32:38,237 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-02 21:32:38,244 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interfaces.
+2021-11-02 21:32:38,354 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-11-02 21:32:38,371 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 318 ms
+2021-11-02 21:32:38,402 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/library_db'
+2021-11-02 21:32:38,456 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 21:32:38,464 WARN org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'publisherController': Resolution of declared constructors on bean Class [com.codecompass.libraryapi.Publisher.PublisherController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@24e92a18] failed; nested exception is java.lang.NoClassDefFoundError: com/codecompass/libraryapi/Publisher/PublisherService
+2021-11-02 21:32:38,464 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 21:32:38,471 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-11-02 21:32:38,492 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'publisherController': Resolution of declared constructors on bean Class [com.codecompass.libraryapi.Publisher.PublisherController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@24e92a18] failed; nested exception is java.lang.NoClassDefFoundError: com/codecompass/libraryapi/Publisher/PublisherService
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:309)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1302)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1219)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.codecompass.libraryapi.LibraryapiApplication.main(LibraryapiApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.NoClassDefFoundError: com/codecompass/libraryapi/Publisher/PublisherService
+	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3138)
+	at java.base/java.lang.Class.getDeclaredConstructors(Class.java:2358)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:304)
+	... 23 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.codecompass.libraryapi.Publisher.PublisherService
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:583)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:398)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 27 common frames omitted
+2021-11-02 21:35:31,190 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Starting LibraryapiApplication using Java 11.0.2 on shabbir-mac.local with PID 81574 (/Users/apple/training/webServices/library-api/target/classes started by apple in /Users/apple/training/webServices/library-api)
+2021-11-02 21:35:31,190 DEBUG com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-02 21:35:31,190 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] The following profiles are active: test
+2021-11-02 21:35:31,310 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-02 21:35:31,315 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interfaces.
+2021-11-02 21:35:31,397 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-11-02 21:35:31,405 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 213 ms
+2021-11-02 21:35:31,428 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/library_db'
+2021-11-02 21:35:31,472 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 21:35:31,478 WARN org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'publisherController': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.codecompass.libraryapi.Publisher.PublisherController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@47d8891e]
+2021-11-02 21:35:31,479 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 21:35:31,484 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-11-02 21:35:31,486 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'publisherController': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.codecompass.libraryapi.Publisher.PublisherController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@47d8891e]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:289)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1302)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1219)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.codecompass.libraryapi.LibraryapiApplication.main(LibraryapiApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.codecompass.libraryapi.Publisher.PublisherController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@47d8891e]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:267)
+	... 23 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/codecompass/libraryapi/Exception/LibraryResourceNotFoundException
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3167)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2310)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 25 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.codecompass.libraryapi.Exception.LibraryResourceNotFoundException
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:583)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:398)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 29 common frames omitted
+2021-11-02 21:35:35,939 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Starting LibraryapiApplication using Java 11.0.2 on shabbir-mac.local with PID 81574 (/Users/apple/training/webServices/library-api/target/classes started by apple in /Users/apple/training/webServices/library-api)
+2021-11-02 21:35:35,939 DEBUG com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-02 21:35:35,939 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] The following profiles are active: test
+2021-11-02 21:35:36,035 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-02 21:35:36,039 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interfaces.
+2021-11-02 21:35:36,101 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-11-02 21:35:36,111 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 170 ms
+2021-11-02 21:35:36,130 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/library_db'
+2021-11-02 21:35:36,172 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 21:35:36,188 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-02 21:35:36,210 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-11-02 21:35:36,214 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 2 mappings in 'requestMappingHandlerMapping'
+2021-11-02 21:35:36,223 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-11-02 21:35:36,226 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-11-02 21:35:36,288 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-11-02 21:35:36,292 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-02 21:35:36,295 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Started LibraryapiApplication in 0.383 seconds (JVM running for 10351.73)
+2021-11-02 21:35:36,297 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-11-02 21:37:37,545 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-23] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 21:37:37,805 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Starting LibraryapiApplication using Java 11.0.2 on shabbir-mac.local with PID 81574 (/Users/apple/training/webServices/library-api/target/classes started by apple in /Users/apple/training/webServices/library-api)
+2021-11-02 21:37:37,805 DEBUG com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-02 21:37:37,805 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] The following profiles are active: test
+2021-11-02 21:37:37,928 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-02 21:37:37,932 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interfaces.
+2021-11-02 21:37:37,997 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-11-02 21:37:38,004 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 196 ms
+2021-11-02 21:37:38,027 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/library_db'
+2021-11-02 21:37:38,070 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 21:37:38,088 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-02 21:37:38,110 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-11-02 21:37:38,113 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 2 mappings in 'requestMappingHandlerMapping'
+2021-11-02 21:37:38,121 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-11-02 21:37:38,125 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-11-02 21:37:38,186 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-11-02 21:37:38,190 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-02 21:37:38,193 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Started LibraryapiApplication in 0.578 seconds (JVM running for 10473.632)
+2021-11-02 21:37:38,194 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-11-02 21:37:57,721 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-33] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 21:37:57,801 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Starting LibraryapiApplication using Java 11.0.2 on shabbir-mac.local with PID 81574 (/Users/apple/training/webServices/library-api/target/classes started by apple in /Users/apple/training/webServices/library-api)
+2021-11-02 21:37:57,801 DEBUG com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-02 21:37:57,801 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] The following profiles are active: test
+2021-11-02 21:37:57,904 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-02 21:37:57,910 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interfaces.
+2021-11-02 21:37:57,978 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-11-02 21:37:57,986 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 183 ms
+2021-11-02 21:37:58,011 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/library_db'
+2021-11-02 21:37:58,056 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 21:37:58,077 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-02 21:37:58,103 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-11-02 21:37:58,109 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 2 mappings in 'requestMappingHandlerMapping'
+2021-11-02 21:37:58,119 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-11-02 21:37:58,123 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-11-02 21:37:58,192 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-11-02 21:37:58,201 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-02 21:37:58,205 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Started LibraryapiApplication in 0.429 seconds (JVM running for 10493.645)
+2021-11-02 21:37:58,206 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-11-02 21:37:59,620 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-37] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 21:37:59,703 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Starting LibraryapiApplication using Java 11.0.2 on shabbir-mac.local with PID 81574 (/Users/apple/training/webServices/library-api/target/classes started by apple in /Users/apple/training/webServices/library-api)
+2021-11-02 21:37:59,717 DEBUG com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-02 21:37:59,717 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] The following profiles are active: test
+2021-11-02 21:37:59,834 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-02 21:37:59,839 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interfaces.
+2021-11-02 21:37:59,900 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-11-02 21:37:59,908 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 189 ms
+2021-11-02 21:37:59,927 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/library_db'
+2021-11-02 21:37:59,969 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 21:37:59,989 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-02 21:38:00,016 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-11-02 21:38:00,020 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 2 mappings in 'requestMappingHandlerMapping'
+2021-11-02 21:38:00,028 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-11-02 21:38:00,031 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-11-02 21:38:00,102 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-11-02 21:38:00,106 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-02 21:38:00,111 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Started LibraryapiApplication in 0.43 seconds (JVM running for 10495.55)
+2021-11-02 21:38:00,112 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-11-02 21:40:33,876 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-41] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 21:40:34,150 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Starting LibraryapiApplication using Java 11.0.2 on shabbir-mac.local with PID 81574 (/Users/apple/training/webServices/library-api/target/classes started by apple in /Users/apple/training/webServices/library-api)
+2021-11-02 21:40:34,150 DEBUG com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-02 21:40:34,150 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] The following profiles are active: test
+2021-11-02 21:40:34,275 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-02 21:40:34,282 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interfaces.
+2021-11-02 21:40:34,361 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-11-02 21:40:34,372 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 220 ms
+2021-11-02 21:40:34,399 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/library_db'
+2021-11-02 21:40:34,459 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 21:40:34,482 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-02 21:40:34,514 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-11-02 21:40:34,523 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 2 mappings in 'requestMappingHandlerMapping'
+2021-11-02 21:40:34,535 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-11-02 21:40:34,555 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-11-02 21:40:34,647 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-11-02 21:40:34,653 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-02 21:40:34,656 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Started LibraryapiApplication in 0.714 seconds (JVM running for 10650.1)
+2021-11-02 21:40:34,657 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-11-02 21:40:47,542 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-45] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 21:40:47,630 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Starting LibraryapiApplication using Java 11.0.2 on shabbir-mac.local with PID 81574 (/Users/apple/training/webServices/library-api/target/classes started by apple in /Users/apple/training/webServices/library-api)
+2021-11-02 21:40:47,630 DEBUG com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-02 21:40:47,630 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] The following profiles are active: test
+2021-11-02 21:40:47,721 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-02 21:40:47,726 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interfaces.
+2021-11-02 21:40:47,785 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-11-02 21:40:47,792 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 161 ms
+2021-11-02 21:40:47,815 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/library_db'
+2021-11-02 21:40:47,862 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 21:40:47,878 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-02 21:40:47,895 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-11-02 21:40:47,899 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 2 mappings in 'requestMappingHandlerMapping'
+2021-11-02 21:40:47,905 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-11-02 21:40:47,908 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-11-02 21:40:47,966 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-11-02 21:40:47,971 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-02 21:40:47,973 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Started LibraryapiApplication in 0.365 seconds (JVM running for 10663.417)
+2021-11-02 21:40:47,974 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-11-02 21:41:47,142 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-49] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 21:41:47,229 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Starting LibraryapiApplication using Java 11.0.2 on shabbir-mac.local with PID 81574 (/Users/apple/training/webServices/library-api/target/classes started by apple in /Users/apple/training/webServices/library-api)
+2021-11-02 21:41:47,229 DEBUG com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-02 21:41:47,229 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] The following profiles are active: test
+2021-11-02 21:41:47,323 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-02 21:41:47,326 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interfaces.
+2021-11-02 21:41:47,384 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-11-02 21:41:47,392 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 162 ms
+2021-11-02 21:41:47,411 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/library_db'
+2021-11-02 21:41:47,450 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 21:41:47,464 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-02 21:41:47,483 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-11-02 21:41:47,486 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 2 mappings in 'requestMappingHandlerMapping'
+2021-11-02 21:41:47,496 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-11-02 21:41:47,498 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-11-02 21:41:47,554 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-11-02 21:41:47,558 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-02 21:41:47,560 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Started LibraryapiApplication in 0.352 seconds (JVM running for 10723.006)
+2021-11-02 21:41:47,560 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-11-02 21:44:00,151 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-53] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 21:44:00,418 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Starting LibraryapiApplication using Java 11.0.2 on shabbir-mac.local with PID 81574 (/Users/apple/training/webServices/library-api/target/classes started by apple in /Users/apple/training/webServices/library-api)
+2021-11-02 21:44:00,418 DEBUG com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-02 21:44:00,418 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] The following profiles are active: test
+2021-11-02 21:44:00,505 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-02 21:44:00,510 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interfaces.
+2021-11-02 21:44:00,569 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-11-02 21:44:00,577 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 157 ms
+2021-11-02 21:44:00,596 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/library_db'
+2021-11-02 21:44:00,630 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 21:44:00,644 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-02 21:44:00,662 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-11-02 21:44:00,665 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 2 mappings in 'requestMappingHandlerMapping'
+2021-11-02 21:44:00,670 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-11-02 21:44:00,673 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-11-02 21:44:00,726 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-11-02 21:44:00,731 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-02 21:44:00,733 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Started LibraryapiApplication in 0.516 seconds (JVM running for 10856.184)
+2021-11-02 21:44:00,734 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-11-02 21:48:39,812 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-57] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 21:48:40,082 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Starting LibraryapiApplication using Java 11.0.2 on shabbir-mac.local with PID 81574 (/Users/apple/training/webServices/library-api/target/classes started by apple in /Users/apple/training/webServices/library-api)
+2021-11-02 21:48:40,082 DEBUG com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-02 21:48:40,082 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] The following profiles are active: test
+2021-11-02 21:48:40,192 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-02 21:48:40,198 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interfaces.
+2021-11-02 21:48:40,273 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-11-02 21:48:40,283 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 200 ms
+2021-11-02 21:48:40,310 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/library_db'
+2021-11-02 21:48:40,363 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 21:48:40,382 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-02 21:48:40,405 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-11-02 21:48:40,410 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 2 mappings in 'requestMappingHandlerMapping'
+2021-11-02 21:48:40,420 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-11-02 21:48:40,425 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-11-02 21:48:40,496 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-11-02 21:48:40,501 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-02 21:48:40,503 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Started LibraryapiApplication in 0.628 seconds (JVM running for 11135.963)
+2021-11-02 21:48:40,504 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-11-02 21:48:41,926 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-61] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 21:48:42,001 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Starting LibraryapiApplication using Java 11.0.2 on shabbir-mac.local with PID 81574 (/Users/apple/training/webServices/library-api/target/classes started by apple in /Users/apple/training/webServices/library-api)
+2021-11-02 21:48:42,001 DEBUG com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-02 21:48:42,001 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] The following profiles are active: test
+2021-11-02 21:48:42,079 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-02 21:48:42,083 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interfaces.
+2021-11-02 21:48:42,132 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-11-02 21:48:42,138 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 135 ms
+2021-11-02 21:48:42,152 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/library_db'
+2021-11-02 21:48:42,181 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 21:48:42,194 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-02 21:48:42,209 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-11-02 21:48:42,213 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 2 mappings in 'requestMappingHandlerMapping'
+2021-11-02 21:48:42,218 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-11-02 21:48:42,220 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-11-02 21:48:42,272 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-11-02 21:48:42,276 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-02 21:48:42,278 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Started LibraryapiApplication in 0.295 seconds (JVM running for 11137.738)
+2021-11-02 21:48:42,280 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-11-02 21:49:54,521 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-65] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 21:49:54,640 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Starting LibraryapiApplication using Java 11.0.2 on shabbir-mac.local with PID 81574 (/Users/apple/training/webServices/library-api/target/classes started by apple in /Users/apple/training/webServices/library-api)
+2021-11-02 21:49:54,640 DEBUG com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-02 21:49:54,640 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] The following profiles are active: test
+2021-11-02 21:49:54,766 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-02 21:49:54,773 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interfaces.
+2021-11-02 21:49:54,862 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-11-02 21:49:54,873 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 231 ms
+2021-11-02 21:49:54,901 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/library_db'
+2021-11-02 21:49:54,961 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 21:49:54,980 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-02 21:49:55,010 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-11-02 21:49:55,016 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 2 mappings in 'requestMappingHandlerMapping'
+2021-11-02 21:49:55,029 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-11-02 21:49:55,033 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-11-02 21:49:55,107 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-11-02 21:49:55,111 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-02 21:49:55,114 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Started LibraryapiApplication in 0.5 seconds (JVM running for 11210.576)
+2021-11-02 21:49:55,115 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-11-02 21:49:57,537 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-69] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 21:49:57,639 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Starting LibraryapiApplication using Java 11.0.2 on shabbir-mac.local with PID 81574 (/Users/apple/training/webServices/library-api/target/classes started by apple in /Users/apple/training/webServices/library-api)
+2021-11-02 21:49:57,639 DEBUG com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-02 21:49:57,639 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] The following profiles are active: test
+2021-11-02 21:49:57,750 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-02 21:49:57,761 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interfaces.
+2021-11-02 21:49:57,882 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-11-02 21:49:57,894 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 254 ms
+2021-11-02 21:49:57,925 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/library_db'
+2021-11-02 21:49:57,971 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 21:49:57,985 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-02 21:49:58,002 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-11-02 21:49:58,007 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 2 mappings in 'requestMappingHandlerMapping'
+2021-11-02 21:49:58,015 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-11-02 21:49:58,021 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-11-02 21:49:58,079 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-11-02 21:49:58,082 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-02 21:49:58,085 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Started LibraryapiApplication in 0.469 seconds (JVM running for 11213.547)
+2021-11-02 21:49:58,086 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-11-02 21:49:59,501 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-73] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 21:49:59,576 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Starting LibraryapiApplication using Java 11.0.2 on shabbir-mac.local with PID 81574 (/Users/apple/training/webServices/library-api/target/classes started by apple in /Users/apple/training/webServices/library-api)
+2021-11-02 21:49:59,576 DEBUG com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-02 21:49:59,576 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] The following profiles are active: test
+2021-11-02 21:49:59,661 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-02 21:49:59,665 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interfaces.
+2021-11-02 21:49:59,736 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-11-02 21:49:59,743 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 165 ms
+2021-11-02 21:49:59,757 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/library_db'
+2021-11-02 21:49:59,785 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 21:49:59,798 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-02 21:49:59,813 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-11-02 21:49:59,816 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 2 mappings in 'requestMappingHandlerMapping'
+2021-11-02 21:49:59,821 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-11-02 21:49:59,823 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-11-02 21:49:59,865 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-11-02 21:49:59,868 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-02 21:49:59,871 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Started LibraryapiApplication in 0.312 seconds (JVM running for 11215.333)
+2021-11-02 21:49:59,872 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-11-02 21:52:32,229 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-77] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 21:52:32,499 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Starting LibraryapiApplication using Java 11.0.2 on shabbir-mac.local with PID 81574 (/Users/apple/training/webServices/library-api/target/classes started by apple in /Users/apple/training/webServices/library-api)
+2021-11-02 21:52:32,499 DEBUG com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-02 21:52:32,499 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] The following profiles are active: test
+2021-11-02 21:52:32,601 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-02 21:52:32,608 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interfaces.
+2021-11-02 21:52:32,683 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-11-02 21:52:32,692 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 192 ms
+2021-11-02 21:52:32,716 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/library_db'
+2021-11-02 21:52:32,753 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 21:52:32,827 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-02 21:52:32,871 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-11-02 21:52:32,878 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 7 mappings in 'requestMappingHandlerMapping'
+2021-11-02 21:52:32,891 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-11-02 21:52:32,896 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-11-02 21:52:32,932 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-11-02 21:52:32,937 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-02 21:52:32,939 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Started LibraryapiApplication in 0.635 seconds (JVM running for 11368.406)
+2021-11-02 21:52:32,940 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-11-02 21:54:41,622 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-81] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 21:54:41,892 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Starting LibraryapiApplication using Java 11.0.2 on shabbir-mac.local with PID 81574 (/Users/apple/training/webServices/library-api/target/classes started by apple in /Users/apple/training/webServices/library-api)
+2021-11-02 21:54:41,893 DEBUG com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-02 21:54:41,893 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] The following profiles are active: test
+2021-11-02 21:54:41,980 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-02 21:54:41,985 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interfaces.
+2021-11-02 21:54:42,042 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-11-02 21:54:42,051 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 157 ms
+2021-11-02 21:54:42,072 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/library_db'
+2021-11-02 21:54:42,112 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 21:54:42,172 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-02 21:54:42,196 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-11-02 21:54:42,205 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 7 mappings in 'requestMappingHandlerMapping'
+2021-11-02 21:54:42,215 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-11-02 21:54:42,219 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-11-02 21:54:42,236 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-11-02 21:54:42,240 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-02 21:54:42,243 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Started LibraryapiApplication in 0.548 seconds (JVM running for 11497.714)
+2021-11-02 21:54:42,244 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-11-02 21:57:46,201 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-85] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 21:57:46,505 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Starting LibraryapiApplication using Java 11.0.2 on shabbir-mac.local with PID 81574 (/Users/apple/training/webServices/library-api/target/classes started by apple in /Users/apple/training/webServices/library-api)
+2021-11-02 21:57:46,505 DEBUG com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-02 21:57:46,505 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] The following profiles are active: test
+2021-11-02 21:57:46,607 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-02 21:57:46,611 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interfaces.
+2021-11-02 21:57:46,667 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-11-02 21:57:46,676 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 169 ms
+2021-11-02 21:57:46,698 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/library_db'
+2021-11-02 21:57:46,731 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 21:57:46,781 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-02 21:57:46,800 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-11-02 21:57:46,804 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 7 mappings in 'requestMappingHandlerMapping'
+2021-11-02 21:57:46,812 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-11-02 21:57:46,815 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-11-02 21:57:46,832 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-11-02 21:57:46,835 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-02 21:57:46,837 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Started LibraryapiApplication in 0.563 seconds (JVM running for 11682.313)
+2021-11-02 21:57:46,838 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-11-02 21:58:58,716 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-89] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 21:58:58,815 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Starting LibraryapiApplication using Java 11.0.2 on shabbir-mac.local with PID 81574 (/Users/apple/training/webServices/library-api/target/classes started by apple in /Users/apple/training/webServices/library-api)
+2021-11-02 21:58:58,815 DEBUG com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-02 21:58:58,815 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] The following profiles are active: test
+2021-11-02 21:58:58,901 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-02 21:58:58,906 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interfaces.
+2021-11-02 21:58:58,958 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-11-02 21:58:58,965 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 149 ms
+2021-11-02 21:58:58,982 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/library_db'
+2021-11-02 21:58:59,010 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 21:58:59,068 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-02 21:58:59,092 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-11-02 21:58:59,098 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 7 mappings in 'requestMappingHandlerMapping'
+2021-11-02 21:58:59,108 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-11-02 21:58:59,112 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-11-02 21:58:59,138 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-11-02 21:58:59,143 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-02 21:58:59,145 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Started LibraryapiApplication in 0.356 seconds (JVM running for 11754.623)
+2021-11-02 21:58:59,146 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-11-02 22:00:07,373 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-93] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 22:00:07,697 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Starting LibraryapiApplication using Java 11.0.2 on shabbir-mac.local with PID 81574 (/Users/apple/training/webServices/library-api/target/classes started by apple in /Users/apple/training/webServices/library-api)
+2021-11-02 22:00:07,698 DEBUG com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-02 22:00:07,698 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] The following profiles are active: test
+2021-11-02 22:00:07,800 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-02 22:00:07,805 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interfaces.
+2021-11-02 22:00:07,871 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-11-02 22:00:07,882 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 182 ms
+2021-11-02 22:00:07,904 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/library_db'
+2021-11-02 22:00:07,948 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 22:00:08,063 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-02 22:00:08,115 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-11-02 22:00:08,125 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 7 mappings in 'requestMappingHandlerMapping'
+2021-11-02 22:00:08,133 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-11-02 22:00:08,136 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-11-02 22:00:08,151 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-11-02 22:00:08,155 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-02 22:00:08,158 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Started LibraryapiApplication in 0.712 seconds (JVM running for 11823.638)
+2021-11-02 22:00:08,159 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-11-02 22:00:46,637 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2021-11-02 22:00:46,638 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Detected StandardServletMultipartResolver
+2021-11-02 22:00:46,638 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Detected AcceptHeaderLocaleResolver
+2021-11-02 22:00:46,638 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Detected FixedThemeResolver
+2021-11-02 22:00:46,638 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7c8ffd7c
+2021-11-02 22:00:46,638 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Detected org.springframework.web.servlet.support.SessionFlashMapManager@424bdce8
+2021-11-02 22:00:46,638 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2021-11-02 22:00:46,638 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Completed initialization in 0 ms
+2021-11-02 22:00:46,639 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] DELETE "/v1/publishers/4105", parameters={}
+2021-11-02 22:00:46,639 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-8080-exec-2] Mapped to com.codecompass.libraryapi.Publisher.PublisherController#deletePublisher(Integer, String)
+2021-11-02 22:00:46,676 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8080-exec-2] Using @ExceptionHandler com.codecompass.libraryapi.Exception.LibraryControllerExceptionHandler#handleLibraryResourceNotFoundException(LibraryResourceNotFoundException, WebRequest)
+2021-11-02 22:00:46,681 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8080-exec-2] Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-11-02 22:00:46,690 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8080-exec-2] Writing [LibraryApiError{traceId='7a69d51c-c4f6-4473-b1be-91434422fd28', errorMessage='Publisher Id : 4105 No (truncated)...]
+2021-11-02 22:00:46,691 WARN org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8080-exec-2] Resolved [com.codecompass.libraryapi.Exception.LibraryResourceNotFoundException: Publisher Id : 4105 Not Found]
+2021-11-02 22:00:46,692 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Completed 404 NOT_FOUND
+2021-11-02 22:00:54,427 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-3] DELETE "/v1/publishers/4102", parameters={}
+2021-11-02 22:00:54,438 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-8080-exec-3] Mapped to com.codecompass.libraryapi.Publisher.PublisherController#deletePublisher(Integer, String)
+2021-11-02 22:00:54,479 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8080-exec-3] Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2021-11-02 22:00:54,479 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8080-exec-3] Writing ["Publisher Id : 4102delete successfully."]
+2021-11-02 22:00:54,480 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-3] Completed 202 ACCEPTED
+2021-11-02 22:01:01,776 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-4] DELETE "/v1/publishers/4106", parameters={}
+2021-11-02 22:01:01,787 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-8080-exec-4] Mapped to com.codecompass.libraryapi.Publisher.PublisherController#deletePublisher(Integer, String)
+2021-11-02 22:01:01,791 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8080-exec-4] Using @ExceptionHandler com.codecompass.libraryapi.Exception.LibraryControllerExceptionHandler#handleLibraryResourceNotFoundException(LibraryResourceNotFoundException, WebRequest)
+2021-11-02 22:01:01,799 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8080-exec-4] Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-11-02 22:01:01,799 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8080-exec-4] Writing [LibraryApiError{traceId='70eec814-b53c-41ff-b985-1a4d8d5bf31d', errorMessage='Publisher Id : 4106 No (truncated)...]
+2021-11-02 22:01:01,799 WARN org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8080-exec-4] Resolved [com.codecompass.libraryapi.Exception.LibraryResourceNotFoundException: Publisher Id : 4106 Not Found]
+2021-11-02 22:01:01,800 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-4] Completed 404 NOT_FOUND
+2021-11-02 22:01:07,828 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-5] DELETE "/v1/publishers/4103", parameters={}
+2021-11-02 22:01:07,828 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-8080-exec-5] Mapped to com.codecompass.libraryapi.Publisher.PublisherController#deletePublisher(Integer, String)
+2021-11-02 22:01:07,839 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8080-exec-5] Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2021-11-02 22:01:07,839 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8080-exec-5] Writing ["Publisher Id : 4103delete successfully."]
+2021-11-02 22:01:07,840 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-5] Completed 202 ACCEPTED
+2021-11-02 22:01:22,361 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-6] DELETE "/v1/publishers/aa", parameters={}
+2021-11-02 22:01:22,363 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-8080-exec-6] Mapped to com.codecompass.libraryapi.Publisher.PublisherController#deletePublisher(Integer, String)
+2021-11-02 22:01:22,365 DEBUG org.springframework.web.method.HandlerMethod [http-nio-8080-exec-6] Could not resolve parameter [0] in public org.springframework.http.ResponseEntity<?> com.codecompass.libraryapi.Publisher.PublisherController.deletePublisher(java.lang.Integer,java.lang.String) throws com.codecompass.libraryapi.Exception.LibraryResourceNotFoundException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "aa"
+2021-11-02 22:01:22,365 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8080-exec-6] Using @ExceptionHandler com.codecompass.libraryapi.Exception.LibraryControllerExceptionHandler#handleException(Exception, WebRequest)
+2021-11-02 22:01:22,366 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8080-exec-6] Using 'application/octet-stream', given [*/*] and supported [*/*]
+2021-11-02 22:01:22,366 WARN org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8080-exec-6] Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "aa"]
+2021-11-02 22:01:22,366 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-6] Completed 400 BAD_REQUEST
+2021-11-02 22:06:13,051 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-97] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 22:06:13,373 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Starting LibraryapiApplication using Java 11.0.2 on shabbir-mac.local with PID 81574 (/Users/apple/training/webServices/library-api/target/classes started by apple in /Users/apple/training/webServices/library-api)
+2021-11-02 22:06:13,373 DEBUG com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-02 22:06:13,373 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] The following profiles are active: test
+2021-11-02 22:06:13,496 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-02 22:06:13,502 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interfaces.
+2021-11-02 22:06:13,596 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-11-02 22:06:13,605 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 229 ms
+2021-11-02 22:06:13,627 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/library_db'
+2021-11-02 22:06:13,676 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 22:06:13,737 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-02 22:06:13,761 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-11-02 22:06:13,767 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 7 mappings in 'requestMappingHandlerMapping'
+2021-11-02 22:06:13,779 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-11-02 22:06:13,783 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-11-02 22:06:13,810 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-11-02 22:06:13,815 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-02 22:06:13,818 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Started LibraryapiApplication in 0.691 seconds (JVM running for 12189.31)
+2021-11-02 22:06:13,819 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-11-02 22:06:40,385 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-101] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 22:06:40,481 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Starting LibraryapiApplication using Java 11.0.2 on shabbir-mac.local with PID 81574 (/Users/apple/training/webServices/library-api/target/classes started by apple in /Users/apple/training/webServices/library-api)
+2021-11-02 22:06:40,481 DEBUG com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-02 22:06:40,481 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] The following profiles are active: test
+2021-11-02 22:06:40,568 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-02 22:06:40,571 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interfaces.
+2021-11-02 22:06:40,624 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-11-02 22:06:40,633 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 150 ms
+2021-11-02 22:06:40,651 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/library_db'
+2021-11-02 22:06:40,687 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 22:06:40,742 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-02 22:06:40,768 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-11-02 22:06:40,773 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 7 mappings in 'requestMappingHandlerMapping'
+2021-11-02 22:06:40,782 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-11-02 22:06:40,785 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-11-02 22:06:40,800 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-11-02 22:06:40,804 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-02 22:06:40,806 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Started LibraryapiApplication in 0.349 seconds (JVM running for 12216.299)
+2021-11-02 22:06:40,807 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-11-02 22:07:27,485 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-105] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 22:07:27,591 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Starting LibraryapiApplication using Java 11.0.2 on shabbir-mac.local with PID 81574 (/Users/apple/training/webServices/library-api/target/classes started by apple in /Users/apple/training/webServices/library-api)
+2021-11-02 22:07:27,591 DEBUG com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-02 22:07:27,591 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] The following profiles are active: test
+2021-11-02 22:07:27,671 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-02 22:07:27,675 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interfaces.
+2021-11-02 22:07:27,727 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-11-02 22:07:27,734 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 142 ms
+2021-11-02 22:07:27,751 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/library_db'
+2021-11-02 22:07:27,777 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 22:07:27,824 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-02 22:07:27,843 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-11-02 22:07:27,847 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 7 mappings in 'requestMappingHandlerMapping'
+2021-11-02 22:07:27,856 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-11-02 22:07:27,860 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-11-02 22:07:27,874 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-11-02 22:07:27,878 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-02 22:07:27,880 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Started LibraryapiApplication in 0.315 seconds (JVM running for 12263.375)
+2021-11-02 22:07:27,881 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-11-02 22:08:39,198 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-109] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 22:08:39,429 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Starting LibraryapiApplication using Java 11.0.2 on shabbir-mac.local with PID 81574 (/Users/apple/training/webServices/library-api/target/classes started by apple in /Users/apple/training/webServices/library-api)
+2021-11-02 22:08:39,429 DEBUG com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-02 22:08:39,429 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] The following profiles are active: test
+2021-11-02 22:08:39,513 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-02 22:08:39,517 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interfaces.
+2021-11-02 22:08:39,562 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-11-02 22:08:39,568 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 138 ms
+2021-11-02 22:08:39,583 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/library_db'
+2021-11-02 22:08:39,614 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 22:08:39,681 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-02 22:08:39,709 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-11-02 22:08:39,725 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 7 mappings in 'requestMappingHandlerMapping'
+2021-11-02 22:08:39,735 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-11-02 22:08:39,739 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-11-02 22:08:39,764 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-11-02 22:08:39,769 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-02 22:08:39,771 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Started LibraryapiApplication in 0.504 seconds (JVM running for 12335.268)
+2021-11-02 22:08:39,771 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-11-02 22:08:55,691 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-113] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 22:08:55,792 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Starting LibraryapiApplication using Java 11.0.2 on shabbir-mac.local with PID 81574 (/Users/apple/training/webServices/library-api/target/classes started by apple in /Users/apple/training/webServices/library-api)
+2021-11-02 22:08:55,792 DEBUG com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-02 22:08:55,792 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] The following profiles are active: test
+2021-11-02 22:08:55,881 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-02 22:08:55,890 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interfaces.
+2021-11-02 22:08:55,968 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-11-02 22:08:55,979 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 185 ms
+2021-11-02 22:08:56,000 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/library_db'
+2021-11-02 22:08:56,047 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 22:08:56,109 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-02 22:08:56,132 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-11-02 22:08:56,149 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 7 mappings in 'requestMappingHandlerMapping'
+2021-11-02 22:08:56,159 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-11-02 22:08:56,162 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-11-02 22:08:56,176 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-11-02 22:08:56,180 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-02 22:08:56,182 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Started LibraryapiApplication in 0.413 seconds (JVM running for 12351.68)
+2021-11-02 22:08:56,183 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-11-02 22:09:57,997 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-117] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 22:09:58,078 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Starting LibraryapiApplication using Java 11.0.2 on shabbir-mac.local with PID 81574 (/Users/apple/training/webServices/library-api/target/classes started by apple in /Users/apple/training/webServices/library-api)
+2021-11-02 22:09:58,078 DEBUG com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-02 22:09:58,078 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] The following profiles are active: test
+2021-11-02 22:09:58,156 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-02 22:09:58,160 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interfaces.
+2021-11-02 22:09:58,220 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-11-02 22:09:58,227 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 147 ms
+2021-11-02 22:09:58,249 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/library_db'
+2021-11-02 22:09:58,290 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 22:09:58,347 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-02 22:09:58,374 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-11-02 22:09:58,381 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 7 mappings in 'requestMappingHandlerMapping'
+2021-11-02 22:09:58,401 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-11-02 22:09:58,405 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-11-02 22:09:58,420 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-11-02 22:09:58,424 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-02 22:09:58,427 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Started LibraryapiApplication in 0.367 seconds (JVM running for 12413.926)
+2021-11-02 22:09:58,428 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-11-02 22:09:59,847 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-121] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 22:09:59,930 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Starting LibraryapiApplication using Java 11.0.2 on shabbir-mac.local with PID 81574 (/Users/apple/training/webServices/library-api/target/classes started by apple in /Users/apple/training/webServices/library-api)
+2021-11-02 22:09:59,930 DEBUG com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-02 22:09:59,930 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] The following profiles are active: test
+2021-11-02 22:10:00,009 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-02 22:10:00,013 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interfaces.
+2021-11-02 22:10:00,067 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-11-02 22:10:00,074 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 142 ms
+2021-11-02 22:10:00,092 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/library_db'
+2021-11-02 22:10:00,143 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 22:10:00,193 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-02 22:10:00,219 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-11-02 22:10:00,225 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 7 mappings in 'requestMappingHandlerMapping'
+2021-11-02 22:10:00,232 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-11-02 22:10:00,235 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-11-02 22:10:00,249 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-11-02 22:10:00,252 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-02 22:10:00,254 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Started LibraryapiApplication in 0.342 seconds (JVM running for 12415.754)
+2021-11-02 22:10:00,255 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-11-02 22:10:18,774 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-125] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 22:10:18,870 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Starting LibraryapiApplication using Java 11.0.2 on shabbir-mac.local with PID 81574 (/Users/apple/training/webServices/library-api/target/classes started by apple in /Users/apple/training/webServices/library-api)
+2021-11-02 22:10:18,870 DEBUG com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-02 22:10:18,870 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] The following profiles are active: test
+2021-11-02 22:10:18,949 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-02 22:10:18,953 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interfaces.
+2021-11-02 22:10:19,003 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-11-02 22:10:19,011 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 140 ms
+2021-11-02 22:10:19,028 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/library_db'
+2021-11-02 22:10:19,057 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-02 22:10:19,117 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-02 22:10:19,140 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-11-02 22:10:19,144 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 7 mappings in 'requestMappingHandlerMapping'
+2021-11-02 22:10:19,164 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-11-02 22:10:19,168 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-11-02 22:10:19,194 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-11-02 22:10:19,198 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-02 22:10:19,200 INFO com.codecompass.libraryapi.LibraryapiApplication [restartedMain] Started LibraryapiApplication in 0.35 seconds (JVM running for 12434.701)
+2021-11-02 22:10:19,201 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-11-02 22:10:49,829 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2021-11-02 22:10:49,839 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Detected StandardServletMultipartResolver
+2021-11-02 22:10:49,839 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Detected AcceptHeaderLocaleResolver
+2021-11-02 22:10:49,839 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Detected FixedThemeResolver
+2021-11-02 22:10:49,840 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1cb80f5
+2021-11-02 22:10:49,840 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Detected org.springframework.web.servlet.support.SessionFlashMapManager@6fedf05f
+2021-11-02 22:10:49,840 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2021-11-02 22:10:49,840 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Completed initialization in 1 ms
+2021-11-02 22:10:49,841 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] DELETE "/v1/publishers/11", parameters={}
+2021-11-02 22:10:49,841 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-8080-exec-2] Mapped to com.codecompass.libraryapi.Publisher.PublisherController#deletePublisher(Integer, String)
+2021-11-02 22:10:49,849 ERROR com.codecompass.libraryapi.Publisher.PublisherService [http-nio-8080-exec-2] Trace Id: 6b2fc382-e3fd-47f0-a192-1a02f1c80f77, Publisher Id: 11 Not Found
+org.springframework.dao.EmptyResultDataAccessException: No class com.codecompass.libraryapi.Publisher.PublisherEntity entity with id 11 exists!
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.lambda$deleteById$0(SimpleJpaRepository.java:166)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:408)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.deleteById(SimpleJpaRepository.java:165)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:599)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy262.deleteById(Unknown Source)
+	at com.codecompass.libraryapi.Publisher.PublisherService.deletePublisher(PublisherService.java:94)
+	at com.codecompass.libraryapi.Publisher.PublisherController.deletePublisher(PublisherController.java:84)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:931)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-11-02 22:10:49,854 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8080-exec-2] Using @ExceptionHandler com.codecompass.libraryapi.Exception.LibraryControllerExceptionHandler#handleLibraryResourceNotFoundException(LibraryResourceNotFoundException, WebRequest)
+2021-11-02 22:10:49,856 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8080-exec-2] Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-11-02 22:10:49,857 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8080-exec-2] Writing [LibraryApiError{traceId='6b2fc382-e3fd-47f0-a192-1a02f1c80f77', errorMessage='Publisher Id : 11 Not  (truncated)...]
+2021-11-02 22:10:49,858 WARN org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8080-exec-2] Resolved [com.codecompass.libraryapi.Exception.LibraryResourceNotFoundException: Publisher Id : 11 Not Found]
+2021-11-02 22:10:49,858 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Completed 404 NOT_FOUND
