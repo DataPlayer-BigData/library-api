@@ -1,6 +1,7 @@
 package com.codecompass.libraryapi.Publisher;
 
 import com.codecompass.libraryapi.Exception.LibraryResourceNotFoundException;
+import com.codecompass.libraryapi.util.LibraryApiUtils;
 import com.mysql.cj.jdbc.exceptions.CommunicationsException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -68,5 +69,14 @@ public class PublisherController {
             return new ResponseEntity<>(e.getMessage(),HttpStatus.NOT_FOUND);
         }
         return new ResponseEntity<>("Publisher Id : " + publisherId + "delete successfully.", HttpStatus.ACCEPTED);
+    }
+
+    @GetMapping(path = "/search")
+    public ResponseEntity<?> searchPublisher(@RequestParam String name){
+        if(!LibraryApiUtils.doesStringValueExist(name)){
+            return new ResponseEntity<>("Please enter name to search Publisher",HttpStatus.BAD_REQUEST);
+        }
+
+        return new ResponseEntity<>(publisherService.searchPublisher(name), HttpStatus.OK);
     }
 }
