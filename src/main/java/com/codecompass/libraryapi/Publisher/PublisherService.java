@@ -7,7 +7,10 @@ import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;
 
+import java.util.Collections;
+import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 public class PublisherService {
@@ -18,7 +21,7 @@ public class PublisherService {
         this.publisherRepository = publisherRepository;
     }
 
-    public Publisher addPublisher(Publisher publisherToBeAdded)
+    public Publisher addPublisher(Publisher publisherToBeAdded, String traceId)
             throws LibraryResourceAlreadyExistException {
 
         PublisherEntity publisherEntity = new PublisherEntity(
@@ -31,14 +34,14 @@ public class PublisherService {
         try {
             addedPublisher = publisherRepository.save(publisherEntity);
         } catch (DataIntegrityViolationException e) {
-            throw new LibraryResourceAlreadyExistException("Publisher already exists.");
+            throw new LibraryResourceAlreadyExistException("Trace Id : " + traceId +", Publisher already exists.");
         }
 
         publisherToBeAdded.setPublisherId(addedPublisher.getPublisherId());
         return publisherToBeAdded;
     }
 
-    public Publisher getPublisher(Integer publisherId)
+    public Publisher getPublisher(Integer publisherId, String traceId)
     throws LibraryResourceNotFoundException {
 
         Publisher publisher = null;
@@ -47,12 +50,12 @@ public class PublisherService {
         if (publisherOptional.isPresent()) {
             publisher = new Publisher(publisherOptional.get().getPublisherId(), publisherOptional.get().getName(), publisherOptional.get().getEmailId(), publisherOptional.get().getPhoneNumber());
         } else {
-            throw new LibraryResourceNotFoundException("Publisher Id: " + publisherId + " Not Found");
+            throw new LibraryResourceNotFoundException("Trace Id : " + traceId +", Publisher Id: " + publisherId + " Not Found");
         }
         return publisher;
      }
 
-    public void updatePublisher(Publisher publisher) throws LibraryResourceNotFoundException{
+    public void updatePublisher(Publisher publisher, String traceId) throws LibraryResourceNotFoundException{
         Optional<PublisherEntity> publisherOptional = publisherRepository.findById(publisher.getPublisherId());
 
         if (publisherOptional.isPresent()) {
@@ -71,7 +74,7 @@ public class PublisherService {
             //publisher = createPublisherFromEntity(pe);
 
         } else {
-            throw new LibraryResourceNotFoundException("Publisher Id: " + publisher.getPublisherId() + " Not Found");
+            throw new LibraryResourceNotFoundException("Trace Id : " + traceId +", Publisher Id: " + publisher.getPublisherId() + " Not Found");
         }
         //return publisher;
     }
@@ -80,12 +83,30 @@ public class PublisherService {
         return new Publisher(pe.getPublisherId(),pe.getName(),pe.getEmailId(),pe.getPhoneNumber());
     }
 
-    public void deletePublisher(Integer publisherId) throws LibraryResourceNotFoundException {
+    public void deletePublisher(Integer publisherId, String traceId) throws LibraryResourceNotFoundException {
         try{
             publisherRepository.deleteById(publisherId);
         }catch(EmptyResultDataAccessException e){
-            throw new LibraryResourceNotFoundException("Publisher Id : " + publisherId + " Not Found");
+            throw new LibraryResourceNotFoundException("Trace Id : " + traceId +", Publisher Id : " + publisherId + " Not Found");
         }
+    }
+
+    public List<Publisher> searchPublisher(String name,String traceId) {
+        List<PublisherEntity> publisherEntities = null;
+        if(LibraryApiUtils.doesStringValueExist(name)){
+            publisherEntities = publisherRepository.findByNameContaining(name);
+        }
+        if(publisherEntities != null && publisherEntities.size()>0 ){
+            return createPublishersForSearchResponse(publisherEntities);
+        }else{
+            return Collections.emptyList();
+        }
+    }
+
+    private List<Publisher> createPublishersForSearchResponse(List<PublisherEntity> publisherEntities) {
+        return publisherEntities.stream()
+                .map(pe->createPublisherFromEntity(pe))
+                .collect(Collectors.toList());
     }
 }
 

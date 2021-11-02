@@ -162,10 +162,139 @@ $git pull origin developer
 
 ##Create new branch for every feature. Hence, create feature/publisher branch.
 $git checkout -b feature/publisher-create-api
+$git push origin feature/publisher-create-api  #This will push local repository to github remote repository
+
+## Now go to the https://github.com/DataPlayer-BigData/library-api
+##Now need to merge feature/publisher-create-api to developer repository. To do this follow below steps:
+1) Select feature/publisher-create-api branch
+2) Click on Pull Requests -->New pull request-->Create pull request-->Create pull request-->Merge pull request-->confirm merge
+
+##If we want to create new feature then first pull updated codes from developer repository(on github). To do so follow below steps:
+$git checkout developer
+$git pull origin developer
+
+#Create new branch for publisher get api. First develop new api, then create branch and push
+$git checkout -b feature/publisher-get-api
+$git status
+$git add -A
+$git commit -m "Get Publisher API working"
+$git push origin feature/publisher-get-api
+#After that go to https://github.com/DataPlayer-BigData/library-api
+#Then click on Compare & pull request
+#Click on  Create Pull request-->Merge Pull request-->Confirm Merge
+
+
+#Develop Update Publisher API
+———————————————————————————
+Step1 : First, we need to pull project from developer branch.
+		$git checkout developer  #Switch to developer branch
+		$git pull origin developer #It will pull all from developer branch.
+
+Step2 : Create new branch for new features(feature/publisher-update-api
+		$get checkout -b feature/publisher-update-api
+
+		Now start coding…
+
+#After developing the update publisher API, please checkin the code and merge into developer branch.To do this follow below steps
+Step 1 : $git status
+Step 2 : $git add -A
+Step 3 : $git commit -m “Update Publisher API Working.”
+Step 4 : $git push origin feature/publisher-update-api
+Step 5 : Now, it is time to merge feature/publisher-update-api branch into developer branch.
+		 Step1) Now go to the https://github.com/DataPlayer-BigData/library-api
+		 Step2) Compare & pull request—>Create pull request—>Merge pull request—>Confirm merge
+
+
+#Develop Delete Publisher API
+———————————————————————————
+Step1 : First, we need to pull project from developer branch.
+		$git checkout developer  #Switch to developer branch
+		$git pull origin developer #It will pull all from developer branch.
+
+Step2 : Create new branch for new features(feature/publisher-delete-api
+		$git checkout -b feature/publisher-delete-api
+
+		Now start coding…
+
+#After developing the delete publisher API, please checkin the code and merge into developer branch.To do this follow below steps
+Step 1 : $git status
+Step 2 : $git add -A
+Step 3 : $git commit -m “Delete Publisher API Working.”
+Step 4 : $git push origin feature/publisher-delete-api
+Step 5 : Now, it is time to merge feature/publisher-delete-api branch into developer branch.
+		 Step1) Now go to the https://github.com/DataPlayer-BigData/library-api
+		 Step2) Compare & pull request—>Create pull request—>Merge pull request—>Confirm merge
+
+
+#Develop Search Publisher API
+———————————————————————————
+Step1 : First, we need to pull project from developer branch.
+		$git checkout developer  #Switch to developer branch
+		$git pull origin developer #It will pull all from developer branch.
+
+Step2 : Create new branch for new features(feature/publisher-search-api
+		$git checkout -b feature/publisher-search-api
+
+		Now start coding…
+
+#After developing the delete publisher API, please checkin the code and merge into developer branch.To do this follow below steps
+Step 1 : $git status
+Step 2 : $git add -A
+Step 3 : $git commit -m “Search Publisher API Working.”
+Step 4 : $git push origin feature/publisher-search-api
+Step 5 : Now, it is time to merge feature/publisher-search-api branch into developer branch.
+		 Step1) Now go to the https://github.com/DataPlayer-BigData/library-api
+		 Step2) Compare & pull request—>Create pull request—>Merge pull request—>Confirm merge
+
+
+
+#Managing Secret Properties
+———————————————————————————
+1) How we can secure username and password in application.properties?
+	comment sprint.datasource.password=springuserpassword
+2) IntelliJ IDEA—>ToolBar—>Run—>Edit Configuration
+	VM option: -Dspring.datasource.password=springuserpassword
+3) Apply and Save
+
+#We can run our Spring Boot application via command line as below:
+Step 1: Go to project path cd /Users/apple/training/webServices/library-api
+		$cd /Users/apple/training/webServices/library-api
+
+Step 2: $mvn spring-boot:run -Dspring-boot.run.arguments=--spring.datasource.password=springuserpassword
+
+
+#we can also run our spring boot application by setting environmental variable and using command line
+Step1: Set environmental variable spring.datasource.password
+Step2: $mvn spring-boot:run and press enter
+
+
+
+#DEVELOP NON FUNCTIONAL FEATURES
+————————————————————————————————
+##Trace ID
+——————————
+Step1: Get the latest work from GitHub
+		$git checkout developer
+		$git pull origin developer
+
+Step2: Create new branch techdebt/trace-id
+		$git checkout -b techdebt/trace-id
+
+		Now start coding…
+
+#After developing the Trace Id feature, please checkin the code and merge into developer branch.To do this follow below steps
+Step 1 : $git status
+Step 2 : $git add -A
+Step 3 : $git commit -m “Trace Id feature Working.”
+Step 4 : $git push origin techdebt/trace-id
+Step 5 : Now, it is time to merge techdebt/trace-id branch into developer branch.
+		 Step1) Now go to the https://github.com/DataPlayer-BigData/library-api
+		 Step2) Compare & pull request—>Create pull request—>Merge pull request—>Confirm merge
 
 
 
 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 To kill a process who is running on 8080
 $netstat -vanp tcp |grep 8080  #This will show all details with pid
 $kill -9 pid
