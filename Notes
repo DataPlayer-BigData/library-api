@@ -195,7 +195,7 @@ Step2 : Create new branch for new features(feature/publisher-search-api
 
 		Now start coding…
 
-#After developing the delete publisher API, please checkin the code and merge into developer branch.To do this follow below steps
+#After developing the search publisher API, please checkin the code and merge into developer branch.To do this follow below steps
 Step 1 : $git status
 Step 2 : $git add -A
 Step 3 : $git commit -m “Search Publisher API Working.”
