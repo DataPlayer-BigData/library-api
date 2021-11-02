@@ -332,6 +332,99 @@ Step 5 : Now, it is time to merge feature/publisher-search-api branch into devel
 		 Step1) Now go to the https://github.com/DataPlayer-BigData/library-api
 		 Step2) Compare & pull request—>Create pull request—>Merge pull request
 
+#Managing Secret Properties
+———————————————————————————
+1) How we can secure username and password in application.properties?
+	comment sprint.datasource.password=springuserpassword
+2) IntelliJ IDEA—>ToolBar—>Run—>Edit Configuration
+	VM option: -Dspring.datasource.password=springuserpassword
+3) Apply and Save
+
+#We can run our Spring Boot application via command line as below:
+Step 1: Go to project path cd /Users/apple/training/webServices/library-api
+		$cd /Users/apple/training/webServices/library-api
+
+Step 2: $mvn spring-boot:run -Dspring-boot.run.arguments=--spring.datasource.password=springuserpassword
+
+
+#we can also run our spring boot application by setting environmental variable and using command line
+Step1: Set environmental variable spring.datasource.password
+Step2: $mvn spring-boot:run and press enter
+
+
+
+#DEVELOP NON FUNCTIONAL FEATURES
+————————————————————————————————
+##Trace ID
+——————————
+Step1: Get the latest work from GitHub
+		$git checkout developer
+		$git pull origin developer
+
+Step2: Create new branch techdebt/trace-id
+		$git checkout -b techdebt/trace-id
+
+		Now start coding…
+
+#After developing the Trace Id feature, please checkin the code and merge into developer branch.To do this follow below steps
+Step 1 : $git status
+Step 2 : $git add -A
+Step 3 : $git commit -m “Trace Id feature Working.”
+Step 4 : $git push origin techdebt/trace-id
+Step 5 : Now, it is time to merge techdebt/trace-id branch into developer branch.
+		 Step1) Now go to the https://github.com/DataPlayer-BigData/library-api
+		 Step2) Compare & pull request—>Create pull request—>Merge pull request—>Confirm merge
+
+
+
+#REQUEST VALIDATION
+———————————————————
+Step1: Get the latest work from GitHub
+		$git checkout developer
+		$git pull origin developer
+
+Step2: Create new branch techdebt/publisher-request-validation
+		$git checkout -b techdebt/publisher-request-validation
+
+		Now start coding…
+
+#After developing the Trace Id feature, please checkin the code and merge into developer branch.To do this follow below steps
+Step 1 : $git status
+Step 2 : $git add -A
+Step 3 : $git commit -m “Trace Id feature Working.”
+Step 4 : $git push origin techdebt/publisher-request-validation
+Step 5 : Now, it is time to merge techdebt/publisher-request-validation branch into developer branch.
+		 Step1) Now go to the https://github.com/DataPlayer-BigData/library-api
+		 Step2) Compare & pull request—>Create pull request—>Merge pull request—>Confirm merge
+
+
+
+#Add logging feature
+———————————————————
+Step1: Get the latest work from GitHub
+		$git checkout developer
+		$git pull origin developer
+
+Step2: Create new branch techdebt/logging
+		$git checkout -b techdebt/logging
+
+		Now start coding…
+
+#After adding the logging feature, please checkin the code and merge into developer branch.To do this follow below steps
+Step 1 : $git status
+Step 2 : $git add -A
+Step 3 : $git commit -m “Logging feature Working.”
+Step 4 : $git push origin techdebt/logging
+Step 5 : Now, it is time to merge techdebt/logging branch into developer branch.
+		 Step1) Now go to the https://github.com/DataPlayer-BigData/library-api
+		 Step2) Compare & pull request—>Create pull request—>Merge pull request—>Confirm merge
+
+
+#logback
+————————
+Step1: create file logback-spring.xml under resources folder and add required configuration
+Step2: add this spring.profiles.active=test in application.properties
+Step4: Restart the server and do the operation. You will get all the logs in file as mentioned in logbook-spring.xml.
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 To kill a process who is running on 8080

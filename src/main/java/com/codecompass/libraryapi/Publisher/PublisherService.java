@@ -3,6 +3,8 @@ package com.codecompass.libraryapi.Publisher;
 import com.codecompass.libraryapi.Exception.LibraryResourceAlreadyExistException;
 import com.codecompass.libraryapi.Exception.LibraryResourceNotFoundException;
 import com.codecompass.libraryapi.util.LibraryApiUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;
@@ -15,6 +17,7 @@ import java.util.stream.Collectors;
 @Service
 public class PublisherService {
 
+    private static Logger logger = LoggerFactory.getLogger(PublisherService.class);
     private PublisherRepository publisherRepository;
 
     public PublisherService(PublisherRepository publisherRepository) {
@@ -24,6 +27,7 @@ public class PublisherService {
     public Publisher addPublisher(Publisher publisherToBeAdded, String traceId)
             throws LibraryResourceAlreadyExistException {
 
+        logger.debug("TraceId: {}, Request to add Publisher: {}",traceId,publisherToBeAdded);
         PublisherEntity publisherEntity = new PublisherEntity(
                 publisherToBeAdded.getName(),
                 publisherToBeAdded.getEmailId(),
@@ -34,10 +38,12 @@ public class PublisherService {
         try {
             addedPublisher = publisherRepository.save(publisherEntity);
         } catch (DataIntegrityViolationException e) {
-            throw new LibraryResourceAlreadyExistException("Trace Id : " + traceId +", Publisher already exists.");
+            logger.error("Trace Id : {} , Publisher already exists!!! {}",traceId,e);
+            throw new LibraryResourceAlreadyExistException("Trace Id : " + traceId +", Publisher already exists!!!");
         }
 
         publisherToBeAdded.setPublisherId(addedPublisher.getPublisherId());
+        logger.info("TraceId : {}, Publisher addess successfully: {}", traceId, publisherToBeAdded);
         return publisherToBeAdded;
     }
 

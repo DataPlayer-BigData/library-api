@@ -3,6 +3,8 @@ package com.codecompass.libraryapi.Publisher;
 import com.codecompass.libraryapi.Exception.LibraryResourceNotFoundException;
 import com.codecompass.libraryapi.util.LibraryApiUtils;
 import com.mysql.cj.jdbc.exceptions.CommunicationsException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -18,6 +20,7 @@ import java.util.UUID;
 public class PublisherController {
 
     private PublisherService publisherService;
+    private static Logger logger = LoggerFactory.getLogger(PublisherController.class);
 
     public PublisherController(PublisherService publisherService) {
         this.publisherService = publisherService;
@@ -43,17 +46,18 @@ public class PublisherController {
     public ResponseEntity<?> addPublisher(@Valid @RequestBody  Publisher publisher,
                                           @RequestHeader(value="Trace-Id",defaultValue="") String traceId)  {
 
+        logger.debug("Request to add Publisher: {}",publisher);
         if(!LibraryApiUtils.doesStringValueExist(traceId)){
             traceId = UUID.randomUUID().toString();
         }
-
+        logger.debug("Added TraceId: {}",traceId);
         try {
             Publisher publihser = publisherService.addPublisher(publisher,traceId);
         } catch (LibraryResourceAlreadyExistException e) {
             //e.printStackTrace();
             return new ResponseEntity<>(e.getMessage(), HttpStatus.CONFLICT);
         }
-
+        logger.debug("Returning response for TraceId: {}",traceId);
         return new ResponseEntity<>(publisher,HttpStatus.CREATED);
     }
 
