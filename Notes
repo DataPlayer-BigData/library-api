@@ -181,6 +181,12 @@ $git pull origin developer
 #Create new branch for publisher get api. First develop new api, then create branch and push
 $git checkout -b feature/publisher-get-api
 $git status
+$git add -A
+$git commit -m "Get Publisher API working"
+$git push origin feature/publisher-get-api
+#After that go to https://github.com/DataPlayer-BigData/library-api
+#Then click on Compare & pull request
+#Click on  Create Pull request-->Merge Pull request-->Confirm Merge
 
 
 
