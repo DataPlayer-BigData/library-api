@@ -91,7 +91,9 @@ public class PublisherService {
         }
     }
 
+
     public List<Publisher> searchPublisher(String name,String traceId) {
+
         List<PublisherEntity> publisherEntities = null;
         if(LibraryApiUtils.doesStringValueExist(name)){
             publisherEntities = publisherRepository.findByNameContaining(name);
