@@ -40,7 +40,7 @@ public class PublisherController {
     }
 
     @PostMapping()
-    public ResponseEntity<?> addPublisher(@RequestBody @Valid Publisher publisher,
+    public ResponseEntity<?> addPublisher(@Valid @RequestBody  Publisher publisher,
                                           @RequestHeader(value="Trace-Id",defaultValue="") String traceId)  {
 
         if(!LibraryApiUtils.doesStringValueExist(traceId)){
@@ -59,7 +59,7 @@ public class PublisherController {
 
 
     @PutMapping(path = "/{publisherId}")
-    public ResponseEntity<?> updatePublisher(@PathVariable Integer publisherId, @RequestBody Publisher publisher,
+    public ResponseEntity<?> updatePublisher(@PathVariable Integer publisherId, @Valid @RequestBody Publisher publisher,
                                              @RequestHeader(value="Trace-Id",defaultValue="") String traceId){
         //return new Publisher(publisherId,"Prentice Hall","prentice@email.com","123-456-789");
         if(!LibraryApiUtils.doesStringValueExist(traceId)){
