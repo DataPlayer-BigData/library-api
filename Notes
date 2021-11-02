@@ -163,7 +163,46 @@ $git pull origin developer
 ##Create new branch for every feature. Hence, create feature/publisher branch.
 $git checkout -b feature/publisher-create-api
 
+#Develop Delete Publisher API
+———————————————————————————
+Step1 : First, we need to pull project from developer branch.
+		$git checkout developer  #Switch to developer branch
+		$git pull origin developer #It will pull all from developer branch.
 
+Step2 : Create new branch for new features(feature/publisher-delete-api
+		$git checkout -b feature/publisher-delete-api
+
+		Now start coding…
+
+#After developing the delete publisher API, please checkin the code and merge into developer branch.To do this follow below steps
+Step 1 : $git status
+Step 2 : $git add -A
+Step 3 : $git commit -m “Delete Publisher API Working.”
+Step 4 : $git push origin feature/publisher-delete-api
+Step 5 : Now, it is time to merge feature/publisher-delete-api branch into developer branch.
+		 Step1) Now go to the https://github.com/DataPlayer-BigData/library-api
+		 Step2) Compare & pull request—>Create pull request—>Merge pull request—>Confirm merge
+
+
+#Develop Search Publisher API
+———————————————————————————
+Step1 : First, we need to pull project from developer branch.
+		$git checkout developer  #Switch to developer branch
+		$git pull origin developer #It will pull all from developer branch.
+
+Step2 : Create new branch for new features(feature/publisher-search-api
+		$git checkout -b feature/publisher-search-api
+
+		Now start coding…
+
+#After developing the delete publisher API, please checkin the code and merge into developer branch.To do this follow below steps
+Step 1 : $git status
+Step 2 : $git add -A
+Step 3 : $git commit -m “Search Publisher API Working.”
+Step 4 : $git push origin feature/publisher-search-api
+Step 5 : Now, it is time to merge feature/publisher-search-api branch into developer branch.
+		 Step1) Now go to the https://github.com/DataPlayer-BigData/library-api
+		 Step2) Compare & pull request—>Create pull request—>Merge pull request
 
 
 To kill a process who is running on 8080
