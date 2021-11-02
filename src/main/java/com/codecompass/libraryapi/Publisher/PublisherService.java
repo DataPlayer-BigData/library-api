@@ -4,6 +4,7 @@ import com.codecompass.libraryapi.Exception.LibraryResourceAlreadyExistException
 import com.codecompass.libraryapi.Exception.LibraryResourceNotFoundException;
 import com.codecompass.libraryapi.util.LibraryApiUtils;
 import org.springframework.dao.DataIntegrityViolationException;
+import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
@@ -77,6 +78,14 @@ public class PublisherService {
 
     private Publisher createPublisherFromEntity(PublisherEntity pe) {
         return new Publisher(pe.getPublisherId(),pe.getName(),pe.getEmailId(),pe.getPhoneNumber());
+    }
+
+    public void deletePublisher(Integer publisherId) throws LibraryResourceNotFoundException {
+        try{
+            publisherRepository.deleteById(publisherId);
+        }catch(EmptyResultDataAccessException e){
+            throw new LibraryResourceNotFoundException("Publisher Id : " + publisherId + " Not Found");
+        }
     }
 }
 
