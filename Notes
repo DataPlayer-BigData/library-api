@@ -163,34 +163,6 @@ $git pull origin developer
 ##Create new branch for every feature. Hence, create feature/publisher branch.
 $git checkout -b feature/publisher-create-api
 
-##Checkuout and push new changes in your local project
-$git status
-$git add -A
-$git commit -m "Publisher create api is working."
-$git push origin feature/publisher-create-api  #This will push local repository to github remote repository
-
-## Now go to the https://github.com/DataPlayer-BigData/library-api
-##Now need to merge feature/publisher-create-api to developer repository. To do this follow below steps:
-1) Select feature/publisher-create-api branch
-2) Click on Pull Requests -->New pull request-->Create pull request-->Create pull request-->Merge pull request-->confirm merge
-
-##If we want to create new feature then first pull updated codes from developer repository(on github). To do so follow below steps:
-$git checkout developer
-$git pull origin developer
-
-#Create new branch for publisher get api. First develop new api, then create branch and push
-$git checkout -b feature/publisher-get-api
-$git status
-$git add -A
-$git commit -m "Get Publisher API working"
-$git push origin feature/publisher-get-api
-#After that go to https://github.com/DataPlayer-BigData/library-api
-#Then click on Compare & pull request
-#Click on  Create Pull request-->Merge Pull request-->Confirm Merge
-
-
-
-
 
 
 
