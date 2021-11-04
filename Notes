@@ -426,6 +426,33 @@ Step1: create file logback-spring.xml under resources folder and add required co
 Step2: add this spring.profiles.active=test in application.properties
 Step4: Restart the server and do the operation. You will get all the logs in file as mentioned in logbook-spring.xml.
 
+
+
+#UNIT TEST
+——————————
+Step1: Get the latest work from GitHub
+		$git checkout developer
+		$git pull origin developer
+
+
+Step2: Create new branch techdebt/unit-test
+		$git checkout -b techdebt/unit-test
+
+		Now start coding…
+
+Step3:  Write unit test for PublisherService class and LibraryApiUtilsTest
+
+
+#After writing the Unit Test , please checkin the code and merge into developer branch.To do this follow below steps
+Step 1 : $git status
+Step 2 : $git add -A
+Step 3 : $git commit -m “Unit Test Working.”
+Step 4 : $git push origin techdebt/unit-test
+Step 5 : Now, it is time to merge techdebt/unit-test branch into developer branch.
+		 Step1) Now go to the https://github.com/DataPlayer-BigData/library-api
+		 Step2) Compare & pull request—>Create pull request—>Merge pull request—>Confirm merge
+
+
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 To kill a process who is running on 8080
 $netstat -vanp tcp |grep 8080  #This will show all details with pid
